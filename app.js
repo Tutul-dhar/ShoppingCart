@@ -151,6 +151,7 @@ const addToCart = (id) => {
 listProductHTML.addEventListener('click', (event) => {
     let positionClick = event.target;
     if(positionClick.classList.contains('addCart')) {
+        alert("Product added to cart successfully.");
         let product_id = positionClick.parentElement.dataset.id;
         addToCart(product_id);
     }
